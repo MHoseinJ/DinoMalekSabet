@@ -1,0 +1,65 @@
+{
+  "physics": {
+    "gravity": {
+      "x": 0.0,
+      "y": -9.8
+    }
+  },
+  "objects": [
+    {
+      "name": "MainPlayer",
+      "transform": {
+        "position": {
+          "x": -1,
+          "y": 0
+        },
+        "scale": {
+          "x": 5,
+          "y": 5
+        }
+      },
+      "sprite": {
+        "color": {
+          "r": 255,
+          "b": 255,
+          "g": 255,
+          "a": 255
+        }
+      },
+      "boxCollider": {
+        "x": 1,
+        "y": 1
+      },
+      "rigidbody": {
+        "bodyType": "dynamic",
+        "density": 1
+      },
+      "lua:Scripts/Player.lua": {}
+    },
+
+    {
+      "name": "Ground",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": -2
+        },
+        "scale": {
+          "x": 60,
+          "y": 1
+        }
+      },
+      "sprite": {
+        "color": {
+          "g": 255,
+          "b": 0,
+          "r": 0
+        }
+      },
+      "boxCollider": {
+        "x": 9,
+        "y": 0.25
+      }
+    }
+  ]
+}
