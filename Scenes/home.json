@@ -61,6 +61,22 @@
         "x": 9,
         "y": 0.25
       }
+    },
+
+    {
+      "name": "CactusGenerator",
+      "transform": {
+        "position": {
+          "x": 5,
+          "y": -1
+        }
+      },
+      "sprite": {
+        "color": {
+          "a": 255
+        }
+      },
+      "lua:Scripts/CactusGenerator.lua": {}
     }
   ]
 }
