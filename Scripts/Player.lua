@@ -1,4 +1,4 @@
-local JumpingForce = Vector2.new(0, 4)
+local JumpingForce = Vector2.new(0, 8)
 
 ---@type Rigidbody
 local rigidbody
