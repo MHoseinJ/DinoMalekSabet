@@ -1,0 +1,9 @@
+{
+    "start": 0,
+    "end": 2,
+    "frame_h": 1000,
+    "frame_w": 2000,
+    "loop": true,
+    "frame_time": 0.125,
+    "name": "ground"
+}
