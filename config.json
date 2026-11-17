@@ -1,6 +1,6 @@
 {
     "window": {
-        "fullscreen": false,
+        "fullscreen": true,
         "height": 720,
         "icon": "icon.bmp",
         "renderer": "opengl",
