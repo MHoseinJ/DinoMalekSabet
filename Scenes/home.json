@@ -2,10 +2,22 @@
   "physics": {
     "gravity": {
       "x": 0.0,
-      "y": -18.6
+      "y": -30
     }
   },
   "objects": [
+    {
+      "name": "Background",
+      "transform": {
+        "scale": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "sprite": {
+        "texture": "Assets/background.jpg"
+      }
+    },
     {
       "name": "MainPlayer",
       "transform": {
@@ -14,17 +26,12 @@
           "y": 0
         },
         "scale": {
-          "x": 5,
-          "y": 5
+          "x": 0.5,
+          "y": 0.8
         }
       },
       "sprite": {
-        "color": {
-          "r": 255,
-          "b": 255,
-          "g": 255,
-          "a": 255
-        }
+        "texture": "Assets/car.png"
       },
       "boxCollider": {
         "x": 1,
@@ -42,24 +49,22 @@
       "tag": "ground",
       "transform": {
         "position": {
-          "x": 0,
-          "y": -2
+          "y": -3.5
         },
         "scale": {
-          "x": 60,
-          "y": 1
+          "x": 0.5,
+          "y": 0.5
         }
       },
       "sprite": {
-        "color": {
-          "g": 255,
-          "b": 0,
-          "r": 0
-        }
+        "texture": "Assets/ground.png"
+      },
+      "animator": {
+        "play": "ground"
       },
       "boxCollider": {
-        "x": 9,
-        "y": 0.25
+        "x": 10,
+        "y": 3
       }
     },
 
@@ -71,12 +76,19 @@
           "y": -1
         }
       },
-      "sprite": {
-        "color": {
-          "a": 255
+      "lua:Scripts/CactusGenerator.lua": {}
+    },
+    {
+      "name": "BottomCollider",
+      "transform": {
+        "position": {
+          "y": -6
         }
       },
-      "lua:Scripts/CactusGenerator.lua": {}
+      "boxCollider": {
+        "x": 30,
+        "y": 2
+      }
     }
   ]
 }
